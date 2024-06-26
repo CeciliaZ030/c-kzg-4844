@@ -24,6 +24,7 @@ fn main() {
 
     cc.include(blst_headers_dir.clone());
     cc.warnings(false);
+    cc.flag(format!("-DLIB_PREFIX=ckzg-taiko").as_str());
     cc.file(c_src_dir.join("c_kzg_4844.c"));
 
     cc.try_compile("ckzg-taiko").expect("Failed to compile ckzg");
