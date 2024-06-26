@@ -1,5 +1,5 @@
 [package]
-name = "c-kzg-taiko"
+name = "c-kzg"
 version = "1.0.2"
 edition = "2021"
 license = "Apache-2.0"
